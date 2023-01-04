@@ -3,26 +3,9 @@ using UnityEngine.Networking;
 using System;
 using System.Collections;
 
-#if UNITY_EDITOR
-using UnityEditor;
-#endif
-
 public class CardSpriteDownloader : MonoBehaviour
 {
-    public static CardSpriteDownloader Instance { get; private set; }
     private string _link = "https://picsum.photos/300/200";
-
-    #if UNITY_EDITOR
-        [InitializeOnLoadMethod]
-    #endif  
-        [RuntimeInitializeOnLoadMethod]
-    private static void PreInit()
-    {
-        CardSpriteDownloader cardSpriteDownloader = FindObjectOfType<CardSpriteDownloader>();
-        if (cardSpriteDownloader == null)
-            cardSpriteDownloader = new GameObject("CardSpriteDownloader").AddComponent<CardSpriteDownloader>();
-        Instance = cardSpriteDownloader;
-    }
 
     public IEnumerator LoadSprite(Action<Sprite> callback)
     {

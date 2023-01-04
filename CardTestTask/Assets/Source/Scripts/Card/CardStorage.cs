@@ -7,7 +7,7 @@ public class CardStorage
     private int _maxNumberCards;
 
     public event Action Changed;
-    public  List<Card> Cards => _cards;
+    public List<Card> Cards => _cards;
     public int MaxNumberCards => _maxNumberCards;
 
     public CardStorage(int maxNumberCards)

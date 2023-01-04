@@ -322,6 +322,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _cardPrefab: {fileID: 1706325829762008391, guid: 738641cc17e6824478b40535d7887e58, type: 3}
   _gameScreen: {fileID: 982257166}
+  cardSpriteDownloader: {fileID: 1444275890}
 --- !u!4 &531785017
 Transform:
   m_ObjectHideFlags: 0

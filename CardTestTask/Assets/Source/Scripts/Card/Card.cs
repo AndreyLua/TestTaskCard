@@ -33,7 +33,6 @@ public class Card : MonoBehaviour
     public void SetParameter(ParametersType type, int value)
     {
         _parameterStorageBaseInPairType[type].ChangeValue(value);
-        int siblingIndex = transform.GetSiblingIndex();
         transform.SetSiblingIndex(100);
     }
 

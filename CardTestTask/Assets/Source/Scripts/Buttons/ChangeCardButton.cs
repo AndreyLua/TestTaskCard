@@ -13,7 +13,7 @@ public class ChangeCardButton : MonoBehaviour
         _changeCardButton.onClick.AddListener(OnClick);
     }
 
-    public void OnClick()
+    private void OnClick()
     {
         ChangeCard?.Invoke();
     }
